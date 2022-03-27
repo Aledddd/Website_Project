@@ -1,0 +1,264 @@
+body{
+   margin: 0px;
+   padding: 0px;
+   width:100%;
+   background-image: linear-gradient(-45deg, rgb(68, 68, 68) 50%, #09f 50%);
+}
+
+
+h1{
+   text-align: center;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 25px;
+   font-weight: bolder;
+   color: whitesmoke;
+   padding-top: 25px;
+   padding-left: 100px;
+}
+
+
+p{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: whitesmoke;
+}
+
+header{
+   height: 100px;
+}
+
+footer{
+   text-align: center;
+   height: 100px;
+   width: 100%;
+   background-color:lightblue;
+   margin-top: 3px solid;
+   padding-top: 30px;
+}
+
+.michel {
+  list-style: none;
+   float: right;
+   padding-left: 2px;
+  padding-right: 5px;
+   font-size: 15px;
+  color: white;
+  display: table;
+   text-transform: uppercase;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+nav ul{
+   margin: 0px;
+   padding: 0px;
+   list-style: none;
+}
+
+nav ul li{
+   float: left;
+   position: relative;
+}
+
+nav ul::after{
+   content:"";
+   display: table;
+   clear:both;
+}
+
+nav{
+   width: 100%;
+   background-color: royalblue;
+   margin: 0 auto;
+   position: sticky;
+}
+
+nav a{
+   display: block;
+   text-decoration: none;
+   padding: 25px;
+   font-size: 15px;
+   color: white;
+   font-family: Arial, Helvetica, sans-serif;
+   text-align: center;
+}
+
+.Centre{
+   display: table;
+   margin: 0 auto;
+   text-transform: uppercase;
+}
+
+.sous{
+   display: none;
+   background-color: lightblue;
+   position: absolute;
+   width: 100%;
+   z-index: 1000;
+}
+
+nav div.Centre ul li:hover .sous{
+   display: block;
+}
+
+.sous li{
+   float: none;
+   width: 100%;
+   text-align: left;
+}
+
+.sous a{
+   padding: 10px;
+   border-bottom: none;
+}
+
+.Categories a::after{
+   content:" ▼";
+   font-size: 12px;
+}
+
+.sous a:hover{
+   border: 2px solid royalblue;
+}
+
+.Accueil:hover{
+   background-color:lightblue;
+}
+
+.Categories:hover{
+   background-color:lightblue;
+}
+
+.Panier:hover{
+   background-color:lightblue;
+}
+
+.Compte:hover{
+   background-color:lightblue;
+}
+
+.Contact:hover{
+   background-color:lightblue;
+}
+/*
+
+@media scren and (max-width:780px){
+   header{
+       height: 50px;
+   }
+
+   h1{
+       font-size: 28px;
+       margin: 20px 0px 0px 0px;
+   }
+
+   nav li a{
+       font-size: 12px;
+       padding: 10px;
+   }
+
+   nav li:hover a{
+       padding:  5px 10px 10px 10px;
+   }
+}
+*/
+
+
+section{
+  /* animation-duration: 2s;
+   animation-name: slidein;*/
+   display: inline-block;
+   overflow: hidden;
+}
+
+
+
+div.Globale{
+   margin-left: 10%;
+   margin-right:10%;
+}
+
+div.Gauche{
+   float:left;
+   width: 30%;
+}
+
+div.Droite{
+   float: left;
+   width: 70%;
+}
+div.SousGauche{
+   float:left;
+   width: 50%;
+}
+div.SousDroite{
+   float:left;
+   width: 50%;
+}
+
+
+  fieldset{
+    border:solid 1px #EE6600;
+    border-radius:10px;
+    padding:20px;
+ }
+ legend{
+    font:bold 16pt arial;
+    color:#EE6600;
+ }
+ input,select{
+    border:solid 1px #AAAAAA;
+    padding:10px;
+    font:10pt verdana;
+    color:#EE6600;
+    outline:none;
+    border-radius:6px;
+    width: 50%;
+ }
+ input[type="submit"]{
+    border:none;
+    background-color:#EE6600;
+    color:#FFFFFF;
+    width:150px;
+    cursor:pointer;
+ }
+ .label{
+    margin-bottom:4px;
+    font:10pt arial;
+    color:#AAAAAA;
+ }
+ .champ{
+    margin-bottom:20px;
+ }
+ .erreur{
+    font:10pt arial;
+    color:#DD0000;
+    background-color:#EEEEEE;
+    padding:10px;
+    border-radius:10px;
+    margin-bottom:10px;
+ }
+ .message{
+    font-family:verdana;
+    font-weight:500;
+    color:#FF0101;
+    
+ }
+
+ form{
+    margin-left: 10%;
+    margin-right:10%;
+ }
+
+ div.PresentationGauche{
+    float:left;
+    width: 25%;
+ }
+
+ div.PresentationDroite{
+    padding:10px;
+    float:right;
+    width: 70%;
+ }
+
+ a:link 
+{ 
+ text-decoration:none; 
+} 
